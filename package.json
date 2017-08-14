@@ -5,7 +5,8 @@
   "main": "/generators/app/index.js",
   "scripts": {
     "build": "babel src/ --presets es2015 --out-dir generators/app",
-    "build-dev": "babel src/ --presets es2015 --out-dir generators/app; npm link"
+    "build-dev": "babel src/ --presets es2015 --out-dir generators/app; npm link",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
