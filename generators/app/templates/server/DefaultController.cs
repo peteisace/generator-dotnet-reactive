@@ -1,8 +1,8 @@
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace <%= projectName %> 
 {
-    public class DefaultController 
+    public class DefaultController : Controller
     {
         public IActionResult Index()
         {

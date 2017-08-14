@@ -1,0 +1,11 @@
+{
+  "name": "<%= appName %>",
+  "version": "0.1.0",
+  "description": "An awesome hybrid of .net core, react, sass and everything great.",
+  "main": "/client-src/js/index.js",
+  "keywords": [
+    "react-js",
+    "dotnet-core"
+  ],
+  "license": "UNLICENSED"
+}
