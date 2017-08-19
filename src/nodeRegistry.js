@@ -35,21 +35,23 @@ export default class NodeRegistry {
         this._addToRegistry(
             NodeInstallType.Dev,
             [
-                'babel-cli',
-                'babel-loader',
-                'css-loader',
-                'sass-loader',
-                'extract-text-webpack-plugin',
-                'babel-preset-es2015',
-                'babel-preset-react',
-                'node-sass@4',
-                'ajv@5'
+                
             ]
         );
     }
 
     _appInstalls() {
         const pkgs = [
+            'webpack',
+            'babel-cli',
+            'babel-loader',
+            'css-loader',
+            'sass-loader',
+            'extract-text-webpack-plugin',
+            'babel-preset-es2015',
+            'babel-preset-react',
+            'node-sass@4',
+            'ajv@5',
             'react',
             'react-dom',
             'react-router-dom'

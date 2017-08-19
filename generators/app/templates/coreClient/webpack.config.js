@@ -2,7 +2,7 @@ const path = require('path');
 const extractPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: 'client-src/index.js',
+    entry: './client-src/index.js',
     output: {
         filename: '<%= bundleFilename %>',
         path: path.resolve(__dirname, '<%= serverWebDirectory %>/wwwroot/js')
@@ -13,7 +13,8 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 include: [
                     path.resolve(__dirname, 'client-src/js'),
-                    path.resolve(__dirname, 'client-src/jsx')
+                    path.resolve(__dirname, 'client-src/jsx'),
+                    path.resolve(__dirname, 'client-src')
                 ],
                 exclude: [
                     path.resolve(__dirname, 'node_modules')

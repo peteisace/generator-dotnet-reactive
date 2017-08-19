@@ -6,7 +6,7 @@ export default class JsFileProvider extends FileProvider {
         return [
             new FileInfo(
                 'scripts/index.js',
-                'client-src/js/index.js'
+                'client-src/index.js'
             ),
             new FileInfo(
                 'scripts/my-model.js',
